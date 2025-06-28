@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FHC Official Club</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FISAT HORIZON CLUB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">FHC</span>
+        <span class="logo-text">FISAT HORIZON</span>
+      </div>
+      <nav id="nav-links">
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Projects</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
 
-  <!-- ===== DEV 1 - Navigation Bar and Hero Section  ===== -->
-  <section id="hero">
-    
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="badge">
+        Official College Club &bull; Computer Science Department
+      </div>
+      <h1>FISAT <span>HORIZON</span> CLUB</h1>
+      <p>
+        The official technology and innovation club of FISAT, pioneering the
+        future of virtual reality and innovative design through collaborative
+        learning and cutting-edge projects.
+      </p>
+      <button class="cta-btn">Discover More</button>
+    </section>
 
-  <!-- ===== DEV 2 - About Us, Mission Vison ===== -->
-  <section id="about">
-    
-  </section>
-
-  <!-- ===== DEV 3 -  Major Events ===== -->
-  <section id="events">
-    
-  </section>
-
-  <!-- ===== DEV 3 - Projects ===== -->
-  <section id="projects">
-    
-  </section>
-
-  <!-- ===== DEV 4 - Executive Committee ===== -->
-  <section id="execom">
-    
-  </section>
-
-  <!-- ===== DEV 5 - Contact Us and Footer ===== -->
-  <section id="contact">
-    
-  </section>
-
-</body>
+    <!-- Info Bar -->
+    <div class="info-bar">
+      <span class="official">OFFICIAL</span> Recognized College Club
+      <span class="divider">|</span>
+      Established 2024
+      <span class="divider">|</span>
+      FISAT Engineering College
+    </div>
+  </body>
+  <script>
+    // Simple nav toggle for mobile
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.getElementById("nav-links");
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      navToggle.classList.toggle("open");
+    });
+  </script>
 </html>
